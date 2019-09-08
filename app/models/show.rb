@@ -11,5 +11,7 @@ class Show < ActiveRecord::Base
   def self.lowest_rating
     self.all.minimum(:rating)
   end
+  
+  def 
 
 end
