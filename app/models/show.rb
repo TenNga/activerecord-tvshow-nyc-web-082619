@@ -12,7 +12,7 @@ class Show < ActiveRecord::Base
     self.all.minimum(:rating)
   end
   
-  def least_popular_show
+  def self.least_popular_show
     self.all.where("rating = ?", self.lowest_rating).first
   end
 
