@@ -8,6 +8,6 @@ class Show < ActiveRecord::Base
     self.all.where("rating = ?", self.highest_rating).first
   end
   
-
+  def 
 
 end
